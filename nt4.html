@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea.</p>
+    <script>
+        let val = document.getElementsByTagName('p');
+        console.log(val);
+        function Col(a){
+            
+            let val2 = (Math.floor(Math.random() * (10) - (0) + (0)));
+            let val3 = (Math.floor(Math.random() * (10) - (0) + (0)));
+            let val4 = (Math.floor(Math.random() * (10) - (0) + (0)));
+            for(let item of val){
+               let val1 = (Math.floor(Math.random() * (3) - (0) + (0)));
+               if(val1 == 0){
+                item.style.color = 'yellow';
+               }else if(val1 == 1){
+                item.style.color = 'red';
+               }else if(val1 == 2){
+                item.style.color = 'blue';
+               }
+               console.log(val1);
+            }
+        }
+        Col(val);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+        }
+       .color1{
+        background-color: red;
+       }
+       .color2{
+        background-color: yellow;
+       }
+       .color3{
+        background-color: rgb(168, 211, 104);
+       }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+        let cnt = 0;
+        let elem = document.querySelectorAll('.circle'); 
+            let start = setInterval(function(){
+                for(let item of elem){
+                     if(item.style.backgroundColor = 'red'){
+                        item.classList.add('color2');
+          }
+                }
+    }, 1000); 
+        let start2 = setInterval(function(){
+            for(let key of elem){
+                    if(key.style.backgroundColor = 'yellow'){
+                        key.classList.add('color3');
+          }
+        }
+    }, 1400); 
+      
+        let star4 = setInterval(function(){
+            for(let ite of elem){
+                    if(ite.style.backgroundColor = 'green'){
+                        ite.classList.add('color1');
+                    }
+        } 
+    }, 1800); 
+              
+        console.log(elem);
+       console.log(start);
+    </script>
+</body>
+</html>

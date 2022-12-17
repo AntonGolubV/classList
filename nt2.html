@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color1{
+            color: red;
+            
+        }
+        .color2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="color1">khjkvhgkv</h1>
+    <h1 class="color1">sshsh</h1>
+    <p class="color2">sehsehsehseh</p>
+    <p class="color2">sehsehseh</p>
+    <script>
+        let val = document.querySelectorAll('h1');
+        let val1 = document.querySelectorAll('p');
+        
+        for(let item of val){
+            item.classList.remove('color1');
+            item.classList.add('color2');
+        }
+        for(let key of val1){
+            key.classList.remove('color2');
+            key.classList.add('color1');
+        }
+        console.log(val);
+        console.log(val1);
+    </script>
+    
+</body>
+</html>
